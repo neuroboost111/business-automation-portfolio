@@ -1,0 +1,429 @@
+/* ============================================
+   RESPONSIVE STYLES
+============================================= */
+
+/* Large screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+    :root {
+        --container-max: 960px;
+    }
+
+    .hero__headline {
+        font-size: var(--font-size-3xl);
+    }
+
+    .metrics__stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guarantees__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process__timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-2xl);
+    }
+
+    .process-step::after {
+        display: none;
+    }
+}
+
+
+/* Medium screens (max-width: 992px) */
+@media (max-width: 992px) {
+    :root {
+        --container-max: 720px;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__cta {
+        display: none;
+    }
+
+    .nav__burger {
+        display: flex;
+    }
+
+    /* Mobile menu */
+    .nav__menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-bg);
+        padding: var(--spacing-xl);
+        gap: var(--spacing-lg);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav__menu.active a {
+        font-size: var(--font-size-lg);
+        padding: var(--spacing-md) 0;
+    }
+
+    .problems__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .case {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .case--reversed {
+        direction: ltr;
+    }
+
+    .case__visual {
+        order: -1;
+    }
+
+    .case--reversed .case__visual {
+        order: -1;
+    }
+
+    .pricing__cards {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .pricing-card--popular {
+        transform: none;
+    }
+
+    .pricing-card--popular:hover {
+        transform: translateY(-4px);
+    }
+
+    .contact__wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+
+    .contact__info {
+        padding-right: 0;
+    }
+
+    .contact__info .section__title {
+        text-align: center;
+    }
+
+    .contact__description {
+        text-align: center;
+    }
+
+    .contact__channels {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    :root {
+        --container-padding: 1rem;
+        --spacing-4xl: 4rem;
+        --spacing-3xl: 3rem;
+    }
+
+    .section__title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .section__subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    .hero {
+        padding: calc(72px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+    }
+
+    .hero__headline {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero__subheadline {
+        font-size: var(--font-size-base);
+    }
+
+    .btn--large {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: var(--font-size-base);
+    }
+
+    .social-proof__logos {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .case__columns {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .case__results {
+        flex-wrap: wrap;
+        gap: var(--spacing-lg);
+    }
+
+    .case__result {
+        flex: 1 1 calc(50% - var(--spacing-lg));
+        min-width: 120px;
+    }
+
+    .metrics__stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .metric-card {
+        padding: var(--spacing-lg);
+    }
+
+    .metric-card__number {
+        font-size: var(--font-size-3xl);
+    }
+
+    .services__table {
+        font-size: var(--font-size-sm);
+    }
+
+    .services__table th,
+    .services__table td {
+        padding: var(--spacing-md);
+    }
+
+    .process__timeline {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .guarantees__grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .tech-stack__grid {
+        gap: var(--spacing-md);
+    }
+
+    .tech-item {
+        min-width: 80px;
+        padding: var(--spacing-md);
+    }
+
+    .footer__content {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+        text-align: center;
+    }
+
+    .footer__links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+}
+
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero__headline {
+        font-size: var(--font-size-xl);
+    }
+
+    .hero__video-placeholder {
+        padding: var(--spacing-2xl) var(--spacing-lg);
+    }
+
+    .problem-card {
+        padding: var(--spacing-lg);
+    }
+
+    .case__header {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .case__result {
+        flex: 1 1 100%;
+    }
+
+    .calculator__form {
+        padding: var(--spacing-lg);
+    }
+
+    .calculator__results {
+        padding: var(--spacing-lg);
+    }
+
+    .result-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+
+    .pricing-card {
+        padding: var(--spacing-lg);
+    }
+
+    .contact__form {
+        padding: var(--spacing-lg);
+    }
+
+    .contact__channel {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+
+    .faq-item__question {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-sm);
+    }
+
+    .faq-item__answer p {
+        padding: 0 var(--spacing-md) var(--spacing-md);
+    }
+}
+
+
+/* Landscape phones */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: calc(72px + var(--spacing-xl)) 0 var(--spacing-xl);
+    }
+
+    .hero__video {
+        max-width: 500px;
+    }
+}
+
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Sharper borders on retina */
+    .btn,
+    .input-group input,
+    .input-group select,
+    .form-group input,
+    .form-group textarea {
+        border-width: 0.5px;
+    }
+}
+
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    [data-animate],
+    [data-animate-stagger] > * {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+/* Dark mode preference */
+@media (prefers-color-scheme: dark) {
+    /* Optional: Add dark mode styles here if needed */
+    /* For now, keeping light theme only */
+}
+
+
+/* Print styles */
+@media print {
+    .header,
+    .nav,
+    .hero__video,
+    .hero__cta,
+    .problems__cta,
+    .calculator,
+    .contact,
+    .footer {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+        background: white;
+    }
+
+    .section__title {
+        font-size: 18pt;
+    }
+
+    .case,
+    .pricing__cards,
+    .process__timeline,
+    .guarantees__grid {
+        grid-template-columns: 1fr;
+    }
+
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 10pt;
+        color: #666;
+    }
+
+    .btn {
+        border: 1px solid currentColor;
+        background: none !important;
+    }
+}
+
+
+/* Focus visible styles for accessibility */
+@media (hover: hover) {
+    .btn:focus-visible,
+    .nav__menu a:focus-visible,
+    .faq-item__question:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+    }
+}
+
+
+/* Touch devices */
+@media (hover: none) {
+    .btn:active {
+        transform: scale(0.98);
+    }
+
+    .hover-lift:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .pricing-card:hover,
+    .problem-card:hover,
+    .guarantee-card:hover,
+    .tech-item:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
