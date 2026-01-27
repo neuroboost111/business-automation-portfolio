@@ -522,7 +522,7 @@
 /* Chat Widget Mobile */
 @media (max-width: 480px) {
     .chat-widget {
-        bottom: 16px;
+        bottom: 80px;
         right: 16px;
     }
 
