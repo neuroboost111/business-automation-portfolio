@@ -12,7 +12,7 @@
     <meta property="og:image" content="/assets/images/og-preview.jpg">
     <meta property="og:url" content="https://automation-portfolio-kappa.vercel.app">
 
-    <title>Pavel Lipin — Автоматизация бизнеса & AI-интеграция | Экономия 15+ часов/нед</title>
+    <title>Pavel Lipin — AI-автоматизация бизнеса | n8n/Make | Экономия 15+ часов/нед</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
@@ -61,8 +61,17 @@
          HERO SECTION — Первый экран
     ============================================= -->
     <section id="hero" class="hero">
+        <!-- Animated grid background -->
+        <div class="hero__grid"></div>
+
         <div class="container">
             <div class="hero__content">
+                <!-- Badge -->
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    <span>Доступен для новых проектов</span>
+                </div>
+
                 <h1 class="hero__headline">
                     Освобождаем <span class="highlight">15+ часов в неделю</span> через AI-автоматизацию — без найма программистов
                 </h1>
@@ -72,24 +81,29 @@
 
                 <div class="hero__cta">
                     <a href="#contact" class="btn btn--primary btn--large">
-                        Получить ROI-расчёт
+                        <span>Получить ROI-расчёт</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </a>
-                    <p class="hero__cta-note">
-                        Бесплатный аудит за 15 минут
-                    </p>
+                    <a href="#cases" class="btn btn--secondary btn--large">
+                        Смотреть кейсы
+                    </a>
                 </div>
 
-                <div class="hero__video">
-                    <div class="hero__video-placeholder">
-                        <div class="hero__video-icon">
-                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-                                <circle cx="32" cy="32" r="32" fill="rgba(99, 102, 241, 0.1)"/>
-                                <path d="M26 20L46 32L26 44V20Z" fill="#6366F1"/>
-                            </svg>
-                        </div>
-                        <p class="hero__video-caption">
-                            Как AI обрабатывает 50 email за 90 секунд вместо 2 часов вашего менеджера
-                        </p>
+                <!-- Hero Stats -->
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">340%</span>
+                        <span class="hero__stat-label">ROI клиентов</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">15+</span>
+                        <span class="hero__stat-label">Часов экономии/нед</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">2-3</span>
+                        <span class="hero__stat-label">Недели до запуска</span>
                     </div>
                 </div>
             </div>
@@ -99,7 +113,7 @@
         <div class="hero__social-proof">
             <div class="container">
                 <div class="social-proof">
-                    <p class="social-proof__label">С нами работают</p>
+                    <p class="social-proof__label">Доверяют</p>
                     <div class="social-proof__logos">
                         <div class="logo-placeholder">GK Kronline</div>
                         <div class="logo-placeholder">Neuroboost</div>
