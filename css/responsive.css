@@ -223,6 +223,32 @@
         min-width: 120px;
     }
 
+    .about__wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+        text-align: center;
+    }
+
+    .about__photo {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .about__photo-decoration {
+        top: 15px;
+        left: 15px;
+        right: -15px;
+        bottom: -15px;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__features {
+        text-align: left;
+    }
+
     .metrics__stats {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
