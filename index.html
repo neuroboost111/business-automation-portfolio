@@ -118,7 +118,7 @@
                         <div class="logo-placeholder">GK Kronline</div>
                         <div class="logo-placeholder">Neuroboost</div>
                         <div class="logo-placeholder">Astra Marine</div>
-                        <div class="logo-placeholder">Apple SpB Pro</div>
+                        <div class="logo-placeholder">Apple Pro</div>
                         <span class="social-proof__extra">+ 8 компаний под NDA</span>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
             </div>
 
 
-            <!-- Кейс 2: Apple SpB Pro -->
+            <!-- Кейс 2: Apple Pro -->
             <div class="case case--reversed">
                 <div class="case__visual">
                     <div class="case__screenshot-placeholder">
@@ -267,7 +267,7 @@
 
                 <div class="case__content">
                     <div class="case__header">
-                        <h3 class="case__title">Apple SpB Pro — сервисный центр</h3>
+                        <h3 class="case__title">Apple Pro — сервисный центр</h3>
                         <span class="case__industry">IT-сервис & Ремонт</span>
                     </div>
 
@@ -487,7 +487,7 @@
                         «Pavel за 3 недели построил систему, на которую мы год искали программистов. Экономия — 220 тыс. ₽/мес только на операторе. Окупилось за 6 недель.»
                     </p>
                     <div class="testimonial__author">
-                        <div class="testimonial__photo-placeholder"></div>
+                        <img src="assets/images/testimonials/alexey.jpg" alt="Алексей К." class="testimonial__photo">
                         <div class="testimonial__author-info">
                             <span class="testimonial__name">Алексей К.</span>
                             <span class="testimonial__position">Директор по развитию, туристическая компания</span>
@@ -942,19 +942,33 @@
                 </div>
 
                 <form class="contact__form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Имя</label>
-                        <input type="text" id="name" name="name" required placeholder="Как к вам обращаться?">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="contact">Telegram или Email</label>
-                        <input type="text" id="contact" name="contact" required placeholder="@username или email">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact">Telegram или Email *</label>
+                            <input type="text" id="contact" name="contact" required placeholder="@username или email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Компания</label>
+                            <input type="text" id="company" name="company" placeholder="Название компании">
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="task">Какую задачу хотите автоматизировать?</label>
-                        <textarea id="task" name="task" rows="4" placeholder="Опишите вашу ситуацию и цели"></textarea>
+                    <div class="form-group form-group--full">
+                        <label for="task">Опишите задачу *</label>
+                        <textarea id="task" name="task" rows="4" required placeholder="Какие процессы хотите автоматизировать? Какие проблемы решить?"></textarea>
                     </div>
 
                     <input type="hidden" id="selected-package" name="package" value="">

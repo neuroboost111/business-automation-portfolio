@@ -1095,6 +1095,15 @@ input, textarea, select {
     border-radius: 50%;
 }
 
+.testimonial__photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    box-shadow: 0 0 20px var(--color-accent-glow);
+}
+
 .testimonial__author-info {
     display: flex;
     flex-direction: column;
@@ -1671,7 +1680,18 @@ input, textarea, select {
     padding: var(--spacing-2xl);
 }
 
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
 .form-group {
+    margin-bottom: 0;
+}
+
+.form-group--full {
     margin-bottom: var(--spacing-lg);
 }
 

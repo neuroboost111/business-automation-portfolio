@@ -289,6 +289,11 @@
     .testimonial__text {
         font-size: var(--font-size-lg);
     }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
 }
 
 
